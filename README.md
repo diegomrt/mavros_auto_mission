@@ -1,8 +1,8 @@
-# mavros_mission_px4 #
+# mavros_auto_mission #
 
-ROS package (tested in ROS Kinetic) for sending a mission via MavLINK to a PX4-based aerial vehicle (real or simulated), remove failsafes, arm the motors, enter Mission mode and complete the mission.
+ROS package (tested in ROS Kinetic) for sending a mission via MavLINK to an aerial vehicle with a PX4 or an ArduPilot autopilot system. It is also able to auto remove failsafes, arm the motors, enter Mission mode and complete the mission autonomously.
 
-Test with a simulated fixed-wing aircraft in this video:
+Test with a simulated PX4 fixed-wing aircraft in this video:
 
 [![Video](https://img.youtube.com/vi/jDYtM7kgN5o/maxresdefault.jpg)](https://youtu.be/jDYtM7kgN5o)
 
@@ -28,11 +28,17 @@ roslaunch px4 mavros_posix_sitl.launch
 
 ```
 
-3. Launch mavros_mission_px4:
+3. Launch mavros_auto_mission:
 ```sh
-roslaunch mavros_mission_px4 mavros_mission_px4.launch 
+roslaunch mavros_auto_mission mavros_mission_px4.launch 
 
 ```
+### With ArduPilot in a real aircraft ### 
 
+1. Connect to the real ArduPilot (Copter, Plane or Rover) via MavLink using a telemetry radio (3DR or similar).
+
+2. Launch mavros_auto_mission:
+```sh
+roslaunch mavros_auto_mission mavros_mission_apm.launch 
 
 
