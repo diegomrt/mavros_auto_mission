@@ -1,0 +1,5 @@
+<launch>
+    <!-- Node launcher for PX4 Autopilot -->
+    <node pkg="mavros_mission_px4" type="mavros_mission_px4.py" name="auto_mavros_mission_px4"  output="screen">
+    </node>
+</launch>
