@@ -57,7 +57,7 @@ class px4FlightMode:
 	    # Load mission from file (MP format). 
 	    # To do: change to avoid using os.system + mavwp
                      # Handle errors pending!
-	    os.system("rosrun mavros mavwp load ~/catkin_ws/src/mavros_mission_px4/missions/missionwp_file.txt") # Load new mission
+	    os.system("rosrun mavros mavwp load ~/catkin_ws/src/mavros_auto_mission/missions/missionwp_file.txt") # Load new mission
 	    rospy.loginfo("Mission WayPoints LOADED!")
 	    os.system("rosrun mavros mavwp show") # Show mission WP loaded
 	    

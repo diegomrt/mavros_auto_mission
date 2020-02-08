@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>mavros_mission_px4</name>
+  <name>mavros_auto_mission</name>
   <version>0.0.1</version>
-  <description>The mavros_mission_px4 package</description>
+  <description>The mavros_auto_mission package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="diego.martin.martin@urjc.es">Diego Martin</maintainer>
